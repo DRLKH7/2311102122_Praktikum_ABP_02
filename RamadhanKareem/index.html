@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramadhan Kareem</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+    <div class="container-fluid">
+        <!-- Header -->
+        <header class="text-center py-5 bg-success text-white">
+            <h1 class="display-4">Ramadhan Kareem</h1>
+            <p class="lead">Selamat menunaikan ibadah puasa di bulan Ramadhan</p>
+        </header>
+
+        <!-- Main Content -->
+        <main class="py-5">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card shadow">
+                        <div class="card-body text-center">
+                            <img src="https://via.placeholder.com/300x200?text=Bulan+Sabit" alt="Bulan Sabit" class="img-fluid mb-4 rounded">
+                            <h2 class="card-title">Doa Pembuka Puasa</h2>
+                            <p class="card-text">"Allahumma inni laka sumtu wa bika aamantu wa 'ala rizqika aftartu"</p>
+                            <p class="text-muted">Artinya: Ya Allah, untuk-Mu aku berpuasa, dengan-Mu aku beriman, dan dengan rezeki-Mu aku berbuka.</p>
+                            
+                            <!-- Button untuk Modal THR -->
+                            <button type="button" class="btn btn-primary btn-lg mt-4" data-bs-toggle="modal" data-bs-target="#thrModal">
+                                Klik untuk THR!
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Modal THR -->
+        <div class="modal fade" id="thrModal" tabindex="-1" aria-labelledby="thrModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header bg-warning">
+                        <h5 class="modal-title" id="thrModalLabel">Selamat!</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <h3 class="text-success">Selamat Anda Mendapatkan THR!</h3>
+                        <p>Semoga THR ini membawa keberkahan dan kegembiraan di bulan Ramadhan.</p>
+                        <img src="https://via.placeholder.com/200x150?text=THR" alt="THR" class="img-fluid rounded">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
