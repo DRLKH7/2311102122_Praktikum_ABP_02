@@ -1,58 +1,217 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ramadhan Kareem</title>
+    <title>Ramadhan Kareem - Website Resmi</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-</head>
-<body class="bg-light">
-    <div class="container-fluid">
-        <!-- Header -->
-        <header class="text-center py-5 bg-success text-white">
-            <h1 class="display-4">Ramadhan Kareem</h1>
-            <p class="lead">Selamat menunaikan ibadah puasa di bulan Ramadhan</p>
-        </header>
 
-        <!-- Main Content -->
-        <main class="py-5">
-            <div class="row justify-content-center">
-                <div class="col-md-8">
-                    <div class="card shadow">
-                        <div class="card-body text-center">
-                            <img src="https://via.placeholder.com/300x200?text=Bulan+Sabit" alt="Bulan Sabit" class="img-fluid mb-4 rounded">
-                            <h2 class="card-title">Doa Pembuka Puasa</h2>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&family=Tajawal:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <div class="container">
+            <a class="navbar-brand" href="#">مُبَارَك عَلَيكُمُ الْشَّهر</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tentang">Tentang Ramadhan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#doa">Doa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#jadwal">Jadwal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#thr">THR</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Bulan Bintang -->
+        <div class="page">
+        <div id="moon" class="fade-in"></div>
+        <div id="main-star" class="fade-in">
+        <div class="star-five rotating"></div>
+        </div>
+        <div class="constellations">
+        <div class="constellation rotating-slow">
+            <div class="baby-star">
+            <div class="star-five rotating"></div>
+            </div>
+            <div class="baby-star">
+            <div class="star-five rotating"></div>
+            </div>
+            <div class="baby-star">
+            <div class="star-five rotating"></div>
+            </div>
+            <div class="baby-star">
+            <div class="star-five rotating"></div>
+            </div>
+        </div>
+        <div id="angled">
+            <div class="constellation rotating-slow">
+            <div class="baby-star">
+                <div class="star-five rotating"></div>
+            </div>
+            <div class="baby-star">
+                <div class="star-five rotating"></div>
+            </div>
+            <div class="baby-star">
+                <div class="star-five rotating"></div>
+            </div>
+            <div class="baby-star">
+                <div class="star-five rotating"></div>
+            </div>
+            </div>
+        </div>
+        </div>
+        <div class="text slide-up">Ramadhan Kareem</div>
+    </div>
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero bg-light py-5">
+        <div class="container text-center">
+            <h1 class="display-4 text-success">Selamat datang di bulan penuh berkah</h1>
+            <p class="lead">Mari bersama-sama menunaikan ibadah puasa dengan penuh keikhlasan.</p>
+        </div>
+    </section>
+
+    <!-- Tentang Ramadhan -->
+    <section id="tentang" class="py-5 bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="text-success">Tentang Bulan Ramadhan</h2>
+                    <p>Ramadhan adalah bulan kesembilan dalam kalender Hijriah, bulan di mana Al-Qur'an diturunkan. Puasa Ramadhan adalah salah satu dari lima rukun Islam yang wajib dilakukan oleh setiap muslim.</p>
+                    <p>Di bulan ini, umat Islam diwajibkan untuk berpuasa dari fajar hingga terbenam matahari, menahan diri dari makan, minum, merokok, dan hal-hal yang membatalkan puasa lainnya.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Doa Section -->
+    <section id="doa" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center text-success mb-4">Doa-Do'a Ramadhan</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card shadow mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Doa Pembuka Puasa</h5>
                             <p class="card-text">"Allahumma inni laka sumtu wa bika aamantu wa 'ala rizqika aftartu"</p>
                             <p class="text-muted">Artinya: Ya Allah, untuk-Mu aku berpuasa, dengan-Mu aku beriman, dan dengan rezeki-Mu aku berbuka.</p>
-                            
-                            <!-- Button untuk Modal THR -->
-                            <button type="button" class="btn btn-primary btn-lg mt-4" data-bs-toggle="modal" data-bs-target="#thrModal">
-                                Klik untuk THR!
-                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card shadow mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Doa Sahur</h5>
+                            <p class="card-text">"Allahumma barik lana fi syahri ramadhan"</p>
+                            <p class="text-muted">Artinya: Ya Allah, berkahilah kami di bulan Ramadhan.</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </main>
+        </div>
+    </section>
 
-        <!-- Modal THR -->
-        <div class="modal fade" id="thrModal" tabindex="-1" aria-labelledby="thrModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header bg-warning">
-                        <h5 class="modal-title" id="thrModalLabel">Selamat!</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body text-center">
-                        <h3 class="text-success">Selamat Anda Mendapatkan THR!</h3>
-                        <p>Semoga THR ini membawa keberkahan dan kegembiraan di bulan Ramadhan.</p>
-                        <img src="https://via.placeholder.com/200x150?text=THR" alt="THR" class="img-fluid rounded">
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
-                    </div>
+    <!-- Jadwal Section -->
+    <section id="jadwal" class="py-5 bg-white">
+        <div class="container">
+            <h2 class="text-center text-success mb-4">Jadwal Buka Puasa</h2>
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Tanggal</th>
+                            <th>Imsak</th>
+                            <th>Subuh</th>
+                            <th>Dzuhur</th>
+                            <th>Ashar</th>
+                            <th>Maghrib</th>
+                            <th>Isya</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1 Ramadhan</td>
+                            <td>04:30</td>
+                            <td>04:40</td>
+                            <td>12:00</td>
+                            <td>15:15</td>
+                            <td>18:30</td>
+                            <td>19:45</td>
+                        </tr>
+                        <tr>
+                            <td>2 Ramadhan</td>
+                            <td>04:31</td>
+                            <td>04:41</td>
+                            <td>12:00</td>
+                            <td>15:15</td>
+                            <td>18:30</td>
+                            <td>19:45</td>
+                        </tr>
+                        <!-- Tambah lebih banyak baris jika perlu -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- THR Section -->
+    <section id="thr" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="text-success mb-4">Tunjangan Hari Raya (THR)</h2>
+            <p class="lead">Di akhir Ramadhan, umat Islam merayakan Idul Fitri dengan menerima THR. Klik tombol di bawah untuk mendapatkan pesan selamat!</p>
+            <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#thrModal">
+                Dapatkan THR!
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-success text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2026 Ramadhan Kareem. Semua hak dilindungi.</p>
+            <p>Dibuat dengan ❤️ untuk umat Islam.</p>
+        </div>
+    </footer>
+
+    <!-- Modal THR -->
+    <div class="modal fade" id="thrModal" tabindex="-1" aria-labelledby="thrModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-warning">
+                    <h5 class="modal-title" id="thrModalLabel">Selamat!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <h3 class="text-success">Selamat Anda Mendapatkan THR!</h3>
+                    <p>Semoga THR ini membawa keberkahan dan kegembiraan di bulan Ramadhan dan Idul Fitri.</p>
+                    <img src="https://via.placeholder.com/200x150?text=THR" alt="THR" class="img-fluid rounded">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
                 </div>
             </div>
         </div>
@@ -60,5 +219,16 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Smooth Scroll Script -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
