@@ -66,7 +66,7 @@ Penjelasan:
 1. Download atau clone repository ini
 
 ```
-git clone https://github.com/username/ramadhan-kareem.git
+[https://github.com/DRLKH7/2311102122_Praktikum_ABP_02.git]
 ```
 
 2. Masuk ke folder project
