@@ -98,5 +98,5 @@ Project ini dibuat sebagai latihan:
 ---
 
 ## ✨ Author
-Darrel Khayry Adityansah
+Darrel Khayru Adityansah
 2311102122
