@@ -29,30 +29,6 @@ Website ini menampilkan nuansa malam dengan **bulan, bintang animasi**, serta **
 
 ---
 
-## 🗂 Struktur Project
-
-```
-RamadhanKareem/
-│
-├── index.html
-├── style.css
-├── README.md
-│
-└── assets
-    ├── moon.png
-    ├── star.png
-```
-
-Penjelasan:
-
-| File         | Fungsi                   |
-| ------------ | ------------------------ |
-| `index.html` | Halaman utama website    |
-| `style.css`  | Styling dan animasi CSS  |
-| `assets/`    | Gambar bulan dan bintang |
-
----
-
 ## ⚙️ Teknologi yang Digunakan
 * HTML5
 * CSS3
