@@ -1,0 +1,64 @@
+body{
+    min-height:100vh;
+    background: linear-gradient(135deg,#1e3c72,#2a5298);
+    font-family: 'Segoe UI',sans-serif;
+}
+
+/* NAVBAR */
+
+.navbar-brand{
+    font-weight:bold;
+    letter-spacing:1px;
+}
+
+/* DASHBOARD */
+
+.dashboard-card{
+    background:white;
+    padding:40px;
+    border-radius:12px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+    text-align:center;
+}
+
+.dashboard-logo{
+    width:120px;
+    margin-bottom:15px;
+}
+
+.dashboard-title{
+    font-size:28px;
+    font-weight:600;
+    margin-bottom:10px;
+}
+
+.dashboard-subtitle{
+    color:#777;
+    margin-bottom:30px;
+}
+
+/* BUTTON */
+
+.btn-custom{
+    padding:12px 25px;
+    border-radius:8px;
+    font-weight:500;
+}
+
+/* FORM CARD */
+
+.form-card{
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* TABLE */
+
+.table-card{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
