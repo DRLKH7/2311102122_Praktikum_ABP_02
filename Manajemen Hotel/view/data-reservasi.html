@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html lang="id">
+<html>
 <head>
 
-<meta charset="UTF-8">
-<title>Dashboard</title>
+<title>Data</title>
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="/css/style.css">
 
+<link href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css" rel="stylesheet">
+
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
 
 </head>
 
@@ -20,24 +22,12 @@
 
 <a class="navbar-brand" href="/">Hotel Management</a>
 
-<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
-<span class="navbar-toggler-icon"></span>
-</button>
-
-<div class="collapse navbar-collapse justify-content-end" id="nav">
+<div class="collapse navbar-collapse justify-content-end">
 <ul class="navbar-nav">
 
-<li class="nav-item">
-<a class="nav-link active" href="/">Dashboard</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link" href="/form">Tambah Reservasi</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link" href="/data">Data Reservasi</a>
-</li>
+<li><a class="nav-link" href="/">Dashboard</a></li>
+<li><a class="nav-link" href="/form">Tambah Reservasi</a></li>
+<li><a class="nav-link active" href="/data">Data Reservasi</a></li>
 
 </ul>
 </div>
@@ -45,79 +35,46 @@
 </div>
 </nav>
 
-<!-- HEADER -->
-<div class="container">
+<div class="container mt-5">
 
-<div class="header">
-<img src="/img/image.png" class="logo">
-<h2>Hotel Management System</h2>
-<p>Sistem Pengelolaan Reservasi Hotel</p>
-</div>
+<div class="table-card">
 
-<!-- MENU -->
-<div class="row mt-5 g-4">
+<h3>Data Reservasi</h3>
 
-<div class="col-md-4">
-<div class="menu-card">
-<h5>Tambah Reservasi</h5>
-<p>Input data tamu</p>
-<a href="/form" class="btn btn-primary">Masuk</a>
-</div>
-</div>
+<table id="tabel" class="display">
 
-<div class="col-md-4">
-<div class="menu-card">
-<h5>Data Reservasi</h5>
-<p>Lihat semua data</p>
-<a href="/data" class="btn btn-success">Lihat</a>
-</div>
-</div>
+<thead>
+<tr>
+<th>ID</th>
+<th>Nama</th>
+<th>Kamar</th>
+<th>Checkin</th>
+<th>Checkout</th>
+<th>Status</th>
+</tr>
+</thead>
 
-<div class="col-md-4">
-<div class="menu-card">
-<h5>Manajemen</h5>
-<p>Sistem hotel sederhana</p>
-<a href="/form" class="btn btn-dark">Kelola</a>
-</div>
-</div>
+</table>
 
-</div>
-
-<!-- STAT -->
-<div class="row mt-5 g-4">
-
-<div class="col-md-4">
-<div class="stat-card">
-<div class="stat-number" id="totalReservasi">0</div>
-<div>Total Reservasi</div>
-</div>
-</div>
-
-<div class="col-md-4">
-<div class="stat-card">
-<div class="stat-number">3</div>
-<div>Tipe Kamar</div>
-</div>
-</div>
-
-<div class="col-md-4">
-<div class="stat-card">
-<div class="stat-number">24</div>
-<div>Kamar Tersedia</div>
-</div>
-</div>
-
-</div>
-
-<div class="footer">
-<p>Hotel Management • Sistem Informasi Reservasi</p>
 </div>
 
 </div>
 
 <script>
-$.get("/api/reservasi",function(data){
-$("#totalReservasi").text(data.length)
+$(document).ready(function(){
+
+$('#tabel').DataTable({
+ajax:'/api/reservasi',
+columns:[
+{data:'id'},
+{data:'nama'},
+{data:'kamar'},
+{data:'checkin'},
+{data:'checkout'},
+{data:'status'}
+]
+})
+
 })
 </script>
 
