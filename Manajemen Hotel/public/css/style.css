@@ -1,75 +1,128 @@
-body{
-    min-height:100vh;
-    background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
-    font-family:Segoe UI;
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@300;400;600&display=swap');
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    /* Menggunakan Montserrat sebagai font utama agar terlihat bersih & modern */
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    margin: 0;
 }
 
 /* NAVBAR */
-.nav-link{
-    transition:0.3s;
+.navbar-brand {
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
+    letter-spacing: 2px;
 }
-.nav-link:hover{
-    color:#0d6efd !important;
-    transform:scale(1.05);
+
+.nav-link {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #c5a059 !important; /* Warna emas dari logo */
+    transform: scale(1.05);
 }
 
 /* HEADER */
-.header{
-    text-align:center;
-    color:white;
-    margin-top:40px;
+.header {
+    text-align: center;
+    color: white;
+    margin-top: 40px;
 }
 
-.logo{
-    width:90px;
-    margin-bottom:10px;
+.header h1, .header h2 {
+    font-family: 'Cinzel', serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 5px;
+}
+
+.logo {
+    width: 100px;
+    margin-bottom: 15px;
+    /* Opsional: membuat logo putih jika file aslinya gelap */
+    /* filter: brightness(0) invert(1); */
 }
 
 /* CARD MENU */
-.menu-card{
-    background:white;
-    border-radius:14px;
-    padding:30px;
-    box-shadow:0 15px 40px rgba(0,0,0,0.25);
-    transition:0.3s;
-    text-align:center;
+.menu-card {
+    background: white;
+    border-radius: 14px;
+    padding: 30px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+    transition: 0.3s;
+    text-align: center;
+    border-bottom: 3px solid transparent;
 }
-.menu-card:hover{
-    transform:translateY(-5px);
+
+.menu-card:hover {
+    transform: translateY(-8px);
+    border-bottom: 3px solid #c5a059; /* Aksen emas saat hover */
+}
+
+.menu-card h5 {
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
 }
 
 /* STAT */
-.stat-card{
-    background:white;
-    border-radius:12px;
-    padding:20px;
-    text-align:center;
-    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+.stat-card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
 }
-.stat-number{
-    font-size:28px;
-    font-weight:bold;
+
+.stat-number {
+    font-family: 'Cinzel', serif; /* Angka gaya klasik */
+    font-size: 32px;
+    font-weight: bold;
+    color: #2c5364;
 }
 
 /* FORM */
-.form-card{
-    background:white;
-    padding:30px;
-    border-radius:12px;
-    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+.form-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.form-label {
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    color: #555;
 }
 
 /* TABLE */
-.table-card{
-    background:white;
-    padding:25px;
-    border-radius:12px;
-    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+.table-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
 }
 
-.footer{
-    margin-top:40px;
-    text-align:center;
-    color:white;
-    opacity:0.8;
+thead th {
+    font-family: 'Cinzel', serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: #f8f9fa;
+}
+
+/* FOOTER */
+.footer {
+    margin-top: 60px;
+    padding-bottom: 30px;
+    text-align: center;
+    color: white;
+    opacity: 0.8;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
 }
