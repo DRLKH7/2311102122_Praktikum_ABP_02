@@ -1,124 +1,129 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
+    <meta charset="UTF-8">
+    <title>The Rhuns - Dashboard</title>
 
-<meta charset="UTF-8">
-<title>Dashboard</title>
-
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="/css/style.css">
-
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </head>
 
 <body>
 
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-<div class="container">
-
-<a class="navbar-brand" href="/">Hotel Management</a>
-
-<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
-<span class="navbar-toggler-icon"></span>
-</button>
-
-<div class="collapse navbar-collapse justify-content-end" id="nav">
-<ul class="navbar-nav">
-
-<li class="nav-item">
-<a class="nav-link active" href="/">Dashboard</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link" href="/form">Tambah Reservasi</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link" href="/data">Data Reservasi</a>
-</li>
-
-</ul>
-</div>
-
-</div>
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <a class="navbar-brand" href="/">THE RHUNS</a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="nav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="/">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/form">Tambah Reservasi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/data">Data Reservasi</a>
+                </li>
+            </ul>
+        </div>
+    </div>
 </nav>
 
-<!-- HEADER -->
 <div class="container">
+    <div class="header">
+        <img src="/image.png" class="logo">
+        <h2>The Rhuns</h2>
+        <p>HERITAGE HOTEL</p>
+    </div>
 
-<div class="header">
-<img src="/image.png" class="logo">
-<h2>The Rhuns</h2>
-<p>HERITAGE HOTEL</p>
-</div>
+    <div class="row mt-5 g-4 justify-content-center">
+        <div class="col-md-5">
+            <div class="menu-card">
+                <h5>Tambah Reservasi</h5>
+                <p>Input data tamu baru ke sistem</p>
+                <a href="/form" class="btn btn-primary w-100">Buka Form</a>
+            </div>
+        </div>
 
-<!-- MENU -->
-<div class="row mt-5 g-4">
+        <div class="col-md-5">
+            <div class="menu-card">
+                <h5>Data Reservasi</h5>
+                <p>Lihat dan kelola semua reservasi</p>
+                <a href="/data" class="btn btn-primary w-100">Lihat Data</a>
+            </div>
+        </div>
+    </div>
 
-<div class="col-md-4">
-<div class="menu-card">
-<h5>Tambah Reservasi</h5>
-<p>Input data tamu</p>
-<a href="/form" class="btn btn-primary">Masuk</a>
-</div>
-</div>
+    <div class="row mt-5 g-4">
+        <div class="col-md-4">
+            <div class="stat-card">
+                <div class="stat-number" id="totalReservasi">0</div>
+                <div>Total Reservasi</div>
+            </div>
+        </div>
 
-<div class="col-md-4">
-<div class="menu-card">
-<h5>Data Reservasi</h5>
-<p>Lihat semua data</p>
-<a href="/data" class="btn btn-success">Lihat</a>
-</div>
-</div>
+        <div class="col-md-4">
+            <div class="stat-card">
+                <div class="stat-number">3</div>
+                <div>Tipe Kamar</div>
+            </div>
+        </div>
 
-<div class="col-md-4">
-<div class="menu-card">
-<h5>Manajemen</h5>
-<p>Sistem hotel sederhana</p>
-<a href="/form" class="btn btn-dark">Kelola</a>
-</div>
-</div>
+        <div class="col-md-4">
+            <div class="stat-card">
+                <div class="stat-number" id="tersediaNumber">30</div> 
+                <div>Kamar Tersedia</div>
+            </div>
+        </div>
+    </div>
 
-</div>
-
-<!-- STAT -->
-<div class="row mt-5 g-4">
-
-<div class="col-md-4">
-<div class="stat-card">
-<div class="stat-number" id="totalReservasi">0</div>
-<div>Total Reservasi</div>
-</div>
-</div>
-
-<div class="col-md-4">
-<div class="stat-card">
-<div class="stat-number">3</div>
-<div>Tipe Kamar</div>
-</div>
-</div>
-
-<div class="col-md-4">
-<div class="stat-card">
-<div class="stat-number">24</div>
-<div>Kamar Tersedia</div>
-</div>
-</div>
-
-</div>
-
-<div class="footer">
-<p>Hotel Management • Sistem Informasi Reservasi</p>
-</div>
-
+    <div class="footer">
+        <p>The Rhuns Heritage • Premium Hotel Management System</p>
+    </div>
 </div>
 
 <script>
-$.get("/api/reservasi",function(data){
-$("#totalReservasi").text(data.length)
-})
+$(document).ready(function() {
+    // Tentukan kapasitas total hotel kamu
+    const KAPASITAS_MAKSIMAL = 30;
+
+    $.get("/api/reservasi", function(res) {
+        console.log("Cek Data:", res); 
+        
+        let jumlahReservasi = 0;
+        
+        // Logika pengecekan format data dari API
+        if (Array.isArray(res)) {
+            jumlahReservasi = res.length;
+        } else if (res && res.data && Array.isArray(res.data)) {
+            jumlahReservasi = res.data.length;
+        }
+
+        // 1. Update Total Reservasi
+        $("#totalReservasi").hide().text(jumlahReservasi).fadeIn(800);
+
+        // 2. Hitung Sisa Kamar (Kapasitas - Jumlah Reservasi)
+        let sisaKamar = KAPASITAS_MAKSIMAL - jumlahReservasi;
+        if (sisaKamar < 0) sisaKamar = 0;
+
+        // 3. Update Kamar Tersedia dengan animasi
+        $("#tersediaNumber").hide().text(sisaKamar).fadeIn(800, function() {
+            // Jika kamar hampir habis (<=5), ubah warna jadi peringatan (merah bronze)
+            if (sisaKamar <= 5) {
+                $(this).css("color", "#ff4d4d");
+            }
+        });
+
+    }).fail(function(xhr) {
+        console.error("Gagal load API:", xhr.responseText);
+        $("#totalReservasi").text("!");
+        $("#tersediaNumber").text("!");
+    });
+});
 </script>
 
 </body>
