@@ -14,11 +14,13 @@ Sistem web sederhana untuk menampilkan dan menghitung nilai mahasiswa secara pro
 
 ### Form Tambah Data Mahasiswa
 ![Form Input](./form.png)
-*Tampilan form untuk menambah data mahasiswa baru dengan preview nilai real-time*
+
+Tampilan form untuk menambah data mahasiswa baru dengan preview nilai real-time*
 
 ### Tabel Data dan Statistik
 ![Data Table](./data.png)
-*Tampilan tabel data mahasiswa dan statistik kelas lengkap*
+
+Tampilan tabel data mahasiswa dan statistik kelas lengkap*
 
 ## 🚀 Cara Menjalankan
 
