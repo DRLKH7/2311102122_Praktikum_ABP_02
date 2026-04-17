@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Server</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Data Profil</h2>
+    <button onclick="ambilData()">Tampilkan Profil</button>
+    <div id="hasil-profil"></div>
+</div>
+
+<script>
+function ambilData() {
+    fetch('data.php')
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById('hasil-profil').innerHTML =
+                `Nama: ${data.nama} | Pekerjaan: ${data.pekerjaan} | Lokasi: ${data.lokasi}`;
+        })
+        .catch(error => console.error('Error:', error));
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden; /* Mencegah scrollbar jika tidak diperlukan */
+}
+
+.kontainer-full {
+    width: 100vw;  /* 100% viewport width */
+    height: 100vh; /* 100% viewport height */
+    background-color: lightblue;
+}
+
+/* Background */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container */
+.container {
+    text-align: center;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    width: 90%;
+    max-width: 420px;
+}
+
+/* Judul */
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Button */
+button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    background: #4CAF50;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #45a049;
+}
+
+/* Output */
+#hasil-profil {
+    margin-top: 20px;
+    padding: 15px;
+    min-height: 50px;
+
+    background: #f9fafb;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+
+    font-weight: bold;
+    color: #333;
+
+    /* biar teks panjang tetap rapi */
+    word-wrap: break-word;
+}
