@@ -1,78 +1,51 @@
-# 🌙 Ramadhan Kareem Website
-Website sederhana bertema **Ramadhan Kareem** yang dibuat menggunakan **HTML, CSS, dan Bootstrap**.
-Website ini menampilkan nuansa malam dengan **bulan, bintang animasi**, serta **jadwal buka puasa selama 30 hari**.
+# 📚 Repository Praktikum Aplikasi Berbasis Platform (ABP) - 02
+
+Repository ini berisi kumpulan tugas dan proyek praktikum untuk mata kuliah **Aplikasi Berbasis Platform**. Setiap proyek dikelola dalam foldernya masing-masing.
+
+## 👨‍💻 Identitas
+- **Nama**: Darrel (DRL)
+- **NIM**: 2311102122
+- **Kelas**: ABP - 02
 
 ---
 
-## 📌 Fitur Website
-* 🌙 **Night Sky Background**
-  Background langit malam dengan animasi bulan dan bintang.
+## 📂 Daftar Proyek & Tugas
 
-* ⭐ **Animasi Bintang**
-  Bintang bergerak secara halus menggunakan CSS animation.
+### 1. 🖥️ [WowoStore](WowoStore/)
+Sistem Manajemen Inventory Toko Komputer premium menggunakan **Laravel 12** dan **Laravel Breeze**.
+- **Fitur**: CRUD Produk, Dashboard Statistik, Pencarian Global, dan Filter Kategori.
+- **Status**: Production-ready.
 
-* 🌙 **Rotasi Bulan**
-  Bulan berputar perlahan untuk memberikan efek visual yang menarik.
+### 2. 📄 [CVdarrel](CVdarrel/)
+Project Curriculum Vitae personal yang dibangun menggunakan HTML dan CSS.
 
-* 🕌 **Jadwal Buka Puasa**
-  Tabel berisi jadwal:
+### 3. 🏨 [Manajemen Hotel](Manajemen%20Hotel/)
+Sistem informasi manajemen data hotel.
 
-  * Imsak
-  * Subuh
-  * Dzuhur
-  * Ashar
-  * Maghrib
-  * Isya
+### 4. 🌙 [RamadhanKareem](RamadhanKareem/)
+Project bertema Ramadhan.
 
-* 📱 **Responsive Layout**
-  Menggunakan Bootstrap sehingga tetap rapi di desktop maupun mobile.
+### 5. 🏗️ [Tokowowo](Tokowowo/)
+E-commerce / Store Project baseline.
 
----
-
-## ⚙️ Teknologi yang Digunakan
-* HTML5
-* CSS3
-* Bootstrap
-* Google Fonts
-* CSS Animation
+### 6. 🌐 [WebServer](WebServer/)
+Implementasi web server sederhana.
 
 ---
 
-## 🚀 Cara Menjalankan Project
-1. Download atau clone repository ini
-
-```
-[https://github.com/DRLKH7/2311102122_Praktikum_ABP_02.git]
-```
-
-2. Masuk ke folder project
-```
-cd ramadhan-kareem
-```
-
-3. Buka file **index.html** di browser
-Atau cukup **double click** file `index.html`.
-
----
-
-## 🎨 Tampilan Website
-Website menampilkan:
-* Background langit malam
-* Bulan berputar
-* Bintang bergerak
-* Jadwal buka puasa selama bulan Ramadhan
+## 🛠️ Cara Menjalankan Proyek (Umum)
+1. Masuk ke folder proyek yang diinginkan:
+   ```bash
+   cd NamaFolder
+   ```
+2. Ikuti instruksi di file `README.md` yang ada di dalam folder tersebut (jika tersedia).
+3. Untuk proyek Laravel (seperti WowoStore):
+   ```bash
+   composer install
+   npm install
+   php artisan migrate --seed
+   php artisan serve
+   ```
 
 ---
-
-## 📖 Tujuan Project
-Project ini dibuat sebagai latihan:
-* Penggunaan **HTML dan CSS**
-* Pembuatan **animasi menggunakan CSS**
-* Implementasi **Bootstrap Layout**
-* Membuat tampilan web bertema Ramadhan
-
----
-
-## ✨ Author
-Darrel Khayru Adityansah
-2311102122
+© 2024 **Darrel (DRL)**. All rights reserved.
