@@ -1,0 +1,16 @@
+{
+  "name": "praktikum/ajax-profil",
+  "description": "A minimal PHP AJAX profile demo with routes, env, and JSON response.",
+  "type": "project",
+  "require": {
+    "php": ">=7.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
+    }
+  },
+  "scripts": {
+    "start": "php -S localhost:8000 -t public"
+  }
+}
