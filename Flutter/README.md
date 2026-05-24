@@ -11,17 +11,15 @@ Bagi Anda yang baru memulai atau perlu melakukan konfigurasi ulang Flutter di la
 ### 1. Unduh dan Ekstrak Flutter SDK
 1. Unduh Flutter SDK terbaru (versi stabil) dari situs resmi: [flutter.dev](https://docs.flutter.dev/get-started/install/windows/mobile).
 2. Ekstrak file zip ke direktori lokal yang aman dan tidak memerlukan akses administrator khusus, misalnya `D:\bahasapemograman\Flutter` atau `C:\src\flutter`.
-   > ⚠️ **PENTING**: Jangan mengekstrak Flutter di dalam direktori `C:\Program Files` karena Windows membatasi hak akses file di sana.
+   > **PENTING**: Jangan mengekstrak Flutter di dalam direktori `C:\Program Files` karena Windows membatasi hak akses file di sana.
 
 ### 2. Atur Environment Variables (Windows Path)
 Agar perintah `flutter` dapat dijalankan dari Command Prompt, PowerShell, atau Terminal VS Code mana pun:
 1. Klik tombol **Windows**, cari **"Edit the system environment variables"** dan buka.
 2. Di jendela System Properties, klik tombol **Environment Variables** di bagian bawah.
 3. Di bawah bagian **User variables** (atau *System variables*), cari variabel bernama `Path` dan klik **Edit**.
-4. Klik **New** dan masukkan alamat folder `bin` dari Flutter SDK Anda. Contoh:
-   ```text
-   D:\bahasapemograman\Flutter\bin
-   ```
+4. Klik **New** dan masukkan alamat folder `bin` dari Flutter SDK Anda.
+   
 5. Klik **OK** pada semua jendela untuk menyimpan perubahan.
 6. Buka Terminal/PowerShell baru dan ketik perintah berikut untuk memverifikasi instalasi:
    ```powershell
@@ -82,7 +80,7 @@ Aplikasi ini mendemonstrasikan enam jenis widget dasar yang wajib dipahami oleh 
 
 ---
 
-## ⚡ BEST PRACTICE & OPTIMASI FLUTTER YANG DIGUNAKAN
+## BEST PRACTICE OPTIMASI FLUTTER YANG DIGUNAKAN
 
 Aplikasi ini dirancang mengikuti kaidah penulisan kode berstandar industri (*best practices*):
 
@@ -101,7 +99,7 @@ Menandai objek widget yang nilainya tidak berubah pada saat runtime sebagai kons
 
 ---
 
-## 📸 GALERI TANGKAPAN LAYAR (SCREENSOTS DELIVERABLES)
+## TANGKAPAN LAYAR
 
 Berikut adalah tampilan screenshot hasil running aplikasi pada emulator Android (resolusi HD, format PNG):
 
@@ -156,16 +154,6 @@ git remote add origin https://github.com/darrelpratama/2311102122_Praktikum_ABP_
 # Unggah seluruh kode dan cabang utama ke server GitHub
 git push -u origin main
 ```
-
----
-
-## 🏆 KESIMPULAN PENILAIAN DOSEN
-Dengan mengumpulkan projek ini, Anda telah menunjukkan:
-1. Pemahaman mendalam mengenai layout dasar Flutter.
-2. Pengendalian constraint scrollable yang elegan (`shrinkWrap`, `NeverScrollableScrollPhysics`).
-3. Gaya arsitektur penulisan program berstandar tinggi (*Stateless, const usage, Clean code layout*).
-4. Kemampuan dokumentasi projek akademis yang rapi dan siap saji.
-
 
 ---
 
